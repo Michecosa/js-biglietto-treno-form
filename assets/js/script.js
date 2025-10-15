@@ -14,7 +14,7 @@ const ticketOffer = document.getElementById('ticket-offer');
 const ticketKm = document.getElementById('ticket-km');
 const ticketPrice = document.getElementById('ticket-price');
 
-
+const form = document.querySelector('form');
 
 
 const priceTimesKm = 0.21;
