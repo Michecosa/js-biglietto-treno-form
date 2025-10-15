@@ -16,7 +16,7 @@ const discountMinors = 0.2;
 const discountSeniors = 0.4;
 
 function trainPrice(age, km) {
-  const priceNoDiscount = chilometri * 0.21;
+  const priceNoDiscount = km * 0.21;
   let discount = 0;
   if(age < 18) {
     discount = discountMinors;
@@ -26,3 +26,10 @@ function trainPrice(age, km) {
   const priceFinal = (priceNoDiscount - priceNoDiscount * discount);
   return priceFinal;
 }
+
+button.addEventListener('click', () => {
+  const ageInput = ageIn.ariaValueMax;
+  const kmInput = kmIn.ariaValueMax;
+  const price = trainPrice(ageIn, kmIn);
+  console.log(price);
+})
