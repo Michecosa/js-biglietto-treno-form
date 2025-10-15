@@ -40,14 +40,15 @@ function trainPrice(age, km) {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const ageInput = ageIn.value;
-  const kmInput = kmIn.value;
-  const fullName = nameIn.value +' '+surnameIn.value;
-  
+  const ageInput = Number(ageIn.value);
+  const kmInput = Number(kmIn.value);
+  const fullName = nameIn.value + ' ' + surnameIn.value;
+
+  const result = trainPrice(ageInput, kmInput);
+
   // Update values 
   ticketPassengerName.innerText = fullName;
   ticketPassengerAge.innerText = `${ageInput} anni`;
-  priceOut.innerText = finalPrice;
-
-  priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
-})
+  ticketOffer.innerText = result.offer;
+  ticketPrice.innerText = `${result.price.toFixed(2)}`;
+});
