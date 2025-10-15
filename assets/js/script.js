@@ -33,7 +33,10 @@ function trainPrice(age, km) {
     offerName = 'Sconto Over 65 (40%)';
   }
   const priceFinal = (priceNoDiscount - priceNoDiscount * discount);
-  return priceFinal;
+  return {
+    price: priceFinal,
+    offer: offerName
+  };
 }
 
 form.addEventListener('submit', (event) => {
@@ -41,6 +44,12 @@ form.addEventListener('submit', (event) => {
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
   const fullName = nameIn.value +' '+surnameIn.value;
+  
+  // Update values 
+  ticketPassengerName.innerText = fullName;
+  ticketPassengerAge.innerText = `${ageInput} anni`;
+  priceOut.innerText = finalPrice;
+  ticketArea.classList.remove('d-none');
 
   priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
 })
