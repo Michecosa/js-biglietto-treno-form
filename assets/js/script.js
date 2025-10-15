@@ -50,5 +50,5 @@ form.addEventListener('submit', (event) => {
   ticketPassengerName.innerText = fullName;
   ticketPassengerAge.innerText = `${ageInput} anni`;
   ticketOffer.innerText = result.offer;
-  ticketPrice.innerText = `${result.price.toFixed(2)}`;
+  ticketPrice.innerText = `€ ${result.price.toFixed(2)}`;
 });
