@@ -14,3 +14,15 @@ console.log(button);
 const priceTimesKm = 0.21;
 const discountMinors = 0.2;
 const discountSeniors = 0.4;
+
+function trainPrice(age, km) {
+  const priceNoDiscount = chilometri * 0.21;
+  let discount = 0;
+  if(age < 18) {
+    discount = discountMinors;
+  } else if(age > 65) {
+    discount = discountSeniors;
+  }
+  const priceFinal = (priceNoDiscount - priceNoDiscount * discount);
+  return priceFinal;
+}
