@@ -26,12 +26,10 @@ function trainPrice(age, km) {
 }
 
 form.addEventListener('submit', (event) => {
-/*   console.log(nameIn.value);
-  console.log(surnameIn.value);
-  console.log(ageIn.value);
-  console.log(kmIn.value); */
   event.preventDefault();
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
+  const fullName = nameIn.value +' '+surnameIn.value;
+  
   priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
 })
