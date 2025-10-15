@@ -51,4 +51,5 @@ form.addEventListener('submit', (event) => {
   ticketPassengerAge.innerText = `${ageInput} anni`;
   ticketOffer.innerText = result.offer;
   ticketPrice.innerText = `€ ${result.price.toFixed(2)}`;
+  ticketKm.innerText = `${kmIn.value} km`;
 });
