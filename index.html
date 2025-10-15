@@ -24,24 +24,16 @@
         <form id="train-form" class="row g-3">
           <!-- Input: ANDATA -->
           <div class="row g-1">
-            <div class="col-10">
-              <label for="one-way-trip" class="form-label">Andata</label>
-              <input type="text" class="form-control" name="one-way-trip" id="one-way-trip" required>
-            </div>
-            <div class="col-2">
-              <label for="one-way-trip-hour" class="form-label">Orario</label>
-              <input type="number" class="form-control" name="one-way-trip-hour" id="one-way-trip-hour" required>
+            <div class="col-12">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" class="form-control" name="name" id="name" required>
             </div>
           </div>
           <!-- Input: RITORNO -->
           <div class="row g-1">
-            <div class="col-10">
-              <label for="surname" class="form-label">Ritorno</label>
+            <div class="col-12">
+              <label for="surname" class="form-label">Cognome</label>
               <input type="text" class="form-control" name="surname" id="surname" required>
-            </div>
-            <div class="col-2">
-              <label for="surname" class="form-label">Orario</label>
-              <input type="number" class="form-control" name="surname" id="surname" required>
             </div>
           </div>
           <!-- Input: NUMERO DI CHILOMETRI -->
@@ -61,7 +53,7 @@
         </form>
       </div>
       
-      <div>
+      <div class="container">
         <p>Costo: &euro; <span id="price">0.00</span></p>
       </div>
     </div>
