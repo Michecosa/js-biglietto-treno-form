@@ -7,7 +7,6 @@ const kmIn = document.getElementById('num-km');
 
 // Ticket elements
 const priceOut = document.getElementById('price');
-const ticketArea = document.getElementById('ticket-area');
 const ticketPassengerName = document.getElementById('ticket-passenger-name');
 const ticketPassengerAge = document.getElementById('ticket-passenger-age');
 const ticketOffer = document.getElementById('ticket-offer');
@@ -49,7 +48,6 @@ form.addEventListener('submit', (event) => {
   ticketPassengerName.innerText = fullName;
   ticketPassengerAge.innerText = `${ageInput} anni`;
   priceOut.innerText = finalPrice;
-  ticketArea.classList.remove('d-none');
 
   priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
 })
