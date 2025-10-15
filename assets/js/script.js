@@ -28,7 +28,7 @@ function trainPrice(age, km) {
 }
 
 button.addEventListener('click', () => {
-  const ageInput = ageIn.ariaValueMax;
-  const kmInput = kmIn.ariaValueMax;
+  const ageInput = ageIn.value;
+  const kmInput = kmIn.value;
   console.log(trainPrice(ageInput, kmInput));
 })
