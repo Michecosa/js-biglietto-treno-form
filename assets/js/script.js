@@ -1,15 +1,13 @@
+const nameIn = document.getElementById('name');
+const surnameIn = document.getElementById('surname');
 const ageIn = document.getElementById('age');
 const kmIn = document.getElementById('num-km');
 const priceOut = document.getElementById('price');
 
 const form = document.querySelector('form')
 
-/* 
-console.log(ageIn);
-console.log(kmIn);
-console.log(priceOut);
-console.log(button);
-*/
+
+
 
 const priceTimesKm = 0.21;
 const discountMinors = 0.2;
@@ -28,6 +26,10 @@ function trainPrice(age, km) {
 }
 
 form.addEventListener('submit', (event) => {
+  console.log(nameIn.value);
+  console.log(surnameIn.value);
+  console.log(ageIn.value);
+  console.log(kmIn.value);
   event.preventDefault();
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
