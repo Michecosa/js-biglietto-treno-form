@@ -4,7 +4,9 @@ const priceOut = document.getElementById('price');
 
 const button = document.querySelector('button')
 
+/* 
 console.log(ageIn);
 console.log(kmIn);
 console.log(priceOut);
 console.log(button);
+*/
