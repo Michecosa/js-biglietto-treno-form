@@ -30,5 +30,5 @@ function trainPrice(age, km) {
 button.addEventListener('click', () => {
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
-  console.log(trainPrice(ageInput, kmInput));
+  priceOut.innerText = trainPrice(ageInput, kmInput);
 })
