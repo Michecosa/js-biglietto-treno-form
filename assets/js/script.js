@@ -1,10 +1,18 @@
+// Form input
 const nameIn = document.getElementById('name');
 const surnameIn = document.getElementById('surname');
 const ageIn = document.getElementById('age');
 const kmIn = document.getElementById('num-km');
-const priceOut = document.getElementById('price');
 
-const form = document.querySelector('form')
+
+// Ticket elements
+const priceOut = document.getElementById('price');
+const ticketArea = document.getElementById('ticket-area');
+const ticketPassengerName = document.getElementById('ticket-passenger-name');
+const ticketPassengerAge = document.getElementById('ticket-passenger-age');
+const ticketOffer = document.getElementById('ticket-offer');
+const ticketKm = document.getElementById('ticket-km');
+const ticketPrice = document.getElementById('ticket-price');
 
 
 
@@ -30,6 +38,6 @@ form.addEventListener('submit', (event) => {
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
   const fullName = nameIn.value +' '+surnameIn.value;
-  
+
   priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
 })
