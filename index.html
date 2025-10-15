@@ -18,23 +18,25 @@
   <header></header>
   <main>
 
-    <form id="train-form">
+    <form id="train-form" class="row g-3">
       <!-- Input: NUMERO DI CHILOMETRI -->
-      <div>
-        <label for="num-km">Numero di chilometri</label>
-        <input type="number" name="num-km" id="num-km">
+      <div class="col-md-6">
+        <label for="num-km" class="form-label">Numero di chilometri</label>
+        <input type="number" class="form-control" name="num-km" id="num-km" required>
       </div>
+
       <!-- Input: ETA' DEL PASSEGGERO -->
-      <div>
-        <label for="age">Et&agrave; del passeggero</label>
-        <input type="number" name="age" id="age">
+      <div class="col-md-6">
+        <label for="age" class="form-label">Et&agrave; del passeggero</label>
+        <input type="number" class="form-control" name="age" id="age" required>
       </div>
+
       <!-- Bottone -->
-      <div>
-        <button type="submit">Invia</button>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Invia</button>
       </div>
     </form>
-
+    
     <div>
       <p>Costo: &euro; <span id="price">0.00</span></p>
     </div>
