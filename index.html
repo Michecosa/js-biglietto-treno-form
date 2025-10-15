@@ -19,44 +19,47 @@
   <main>
 
     <div class="container my-4 bg-light p-4 shadow-lg border-0 rounded-4 overflow-hidden">
-      <form id="train-form" class="row g-3">
-        <!-- Input: ANDATA -->
-        <div class="row g-1">
-          <div class="col-10">
-            <label for="one-way-trip" class="form-label">Andata</label>
-            <input type="text" class="form-control" name="one-way-trip" id="one-way-trip" required>
+      <h1>Biglietto del treno</h1>
+      <div class="container my-4">
+        <form id="train-form" class="row g-3">
+          <!-- Input: ANDATA -->
+          <div class="row g-1">
+            <div class="col-10">
+              <label for="one-way-trip" class="form-label">Andata</label>
+              <input type="text" class="form-control" name="one-way-trip" id="one-way-trip" required>
+            </div>
+            <div class="col-2">
+              <label for="one-way-trip-hour" class="form-label">Orario</label>
+              <input type="number" class="form-control" name="one-way-trip-hour" id="one-way-trip-hour" required>
+            </div>
           </div>
-          <div class="col-2">
-            <label for="one-way-trip-hour" class="form-label">Orario</label>
-            <input type="number" class="form-control" name="one-way-trip-hour" id="one-way-trip-hour" required>
+          <!-- Input: RITORNO -->
+          <div class="row g-1">
+            <div class="col-10">
+              <label for="surname" class="form-label">Ritorno</label>
+              <input type="text" class="form-control" name="surname" id="surname" required>
+            </div>
+            <div class="col-2">
+              <label for="surname" class="form-label">Orario</label>
+              <input type="number" class="form-control" name="surname" id="surname" required>
+            </div>
           </div>
-        </div>
-        <!-- Input: RITORNO -->
-        <div class="row g-1">
-          <div class="col-10">
-            <label for="surname" class="form-label">Ritorno</label>
-            <input type="text" class="form-control" name="surname" id="surname" required>
+          <!-- Input: NUMERO DI CHILOMETRI -->
+          <div class="col-12">
+            <label for="num-km" class="form-label">Numero di chilometri</label>
+            <input type="number" class="form-control" name="num-km" id="num-km" required>
           </div>
-          <div class="col-2">
-            <label for="surname" class="form-label">Orario</label>
-            <input type="number" class="form-control" name="surname" id="surname" required>
+          <!-- Input: ETA' DEL PASSEGGERO -->
+          <div class="col-12">
+            <label for="age" class="form-label">Et&agrave; del passeggero</label>
+            <input type="number" class="form-control" name="age" id="age" required>
           </div>
-        </div>
-        <!-- Input: NUMERO DI CHILOMETRI -->
-        <div class="col-12">
-          <label for="num-km" class="form-label">Numero di chilometri</label>
-          <input type="number" class="form-control" name="num-km" id="num-km" required>
-        </div>
-        <!-- Input: ETA' DEL PASSEGGERO -->
-        <div class="col-12">
-          <label for="age" class="form-label">Et&agrave; del passeggero</label>
-          <input type="number" class="form-control" name="age" id="age" required>
-        </div>
-        <!-- Bottone -->
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Invia</button>
-        </div>
-      </form>
+          <!-- Bottone -->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Invia</button>
+          </div>
+        </form>
+      </div>
       
       <div>
         <p>Costo: &euro; <span id="price">0.00</span></p>
