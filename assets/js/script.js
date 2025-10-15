@@ -2,7 +2,7 @@ const ageIn = document.getElementById('age');
 const kmIn = document.getElementById('num-km');
 const priceOut = document.getElementById('price');
 
-const button = document.querySelector('button')
+const form = document.querySelector('form')
 
 /* 
 console.log(ageIn);
@@ -27,7 +27,8 @@ function trainPrice(age, km) {
   return priceFinal;
 }
 
-button.addEventListener('click', () => {
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   const ageInput = ageIn.value;
   const kmInput = kmIn.value;
   priceOut.innerText = trainPrice(ageInput, kmInput).toFixed(2);
